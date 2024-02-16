@@ -1,0 +1,168 @@
+  .avatar {
+   border-radius: 80%;
+   border: 10px solid black;
+   width: 30%;
+   height: auto;
+   position: absolute;
+   top: 130px;
+   left: 20px;
+
+  }
+  .name {
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+    text-align: left;
+    font-size: 30px
+    grid-column: 2;
+    grid-row: 6;
+
+
+
+
+  }
+  .banner {
+
+    width: 100%;
+    height: auto;
+  }
+
+  .bio {
+  font-family: 'Courier New', Courier, monospace;
+  color: #a15ffa;
+  font-size: 20px;
+  grid-column: 0;
+  grid-row: 7;
+  text-align: left;
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding-top: 40px;
+}
+
+
+.projects-name {
+  text-align: left;
+  font-family: "Courier New";
+  color: blue;
+  font-size: 30px;
+}
+
+
+button {
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  transition: 0.2s;
+}
+
+button:hover {
+  letter-spacing: 0.2rem;
+  padding: 1.1rem 3.1rem;
+  background: var(--clr);
+  color: var(--clr);
+  /* box-shadow: 0 0 35px var(--clr); */
+  animation: box 3s infinite;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #272822;
+}
+
+button span {
+  position: relative;
+  z-index: 1;
+}
+button i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+button i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+button:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+button i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+button:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+  100% {
+    box-shadow: #27272c;
+  }
+}
+
+
+
+ .projects {
+   text-align: center;
+   color: #a15ffa;
+   font-size: 20px;
+   font-family: "Courier New";
+ }
+
+.categories {
+  text-align: left;
+  color: #a15ffa;
+  font-size: 35px;
+  font-family: "Courier New";
+}
